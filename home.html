@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 120px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .banner {
+      width: 100%;
+      height: 200px;
+      background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/39/web-1012469_1280.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-card {
+  width: calc(30% - 20px); /* 33.33% width for three products per row, subtracting margin */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Set margin-right to create spacing between cards */
+  margin-left: 0; /* Set margin-left to 0 to avoid extra spacing on the left */
+}
+
+.product-card:nth-child(3n+1) {
+  margin-left: 0; /* Reset margin-left for every third product to start a new row */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #555;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="./home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Products</a>
+        <div class="dropdown-content">
+          <a href="#">Store 1</a>
+          <a href="#">Store 2</a>
+        </div>
+      </li>
+      <li><a href="./aboutUs.html">About Us</a></li>
+      <li><a href="./contactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="banner"></div>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 1</h2>
+      <p>Description of Product 1</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>Description of Product 2</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?v=1614559651" alt="Product 2">
+      <h2>Product 3</h2>
+      <p>Description of Product 3</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Our Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
